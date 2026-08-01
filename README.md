@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+ 
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-     
+    
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -280,6 +280,11 @@
             width: 0; /* Animated via JS/AOS */
             transition: width 1.5s ease-in-out;
             box-shadow: 0 0 10px #00E5FF;
+        }
+
+        /* Prevent the fixed/blurred navbar from covering section tops when jumping via nav links */
+        section[id] {
+            scroll-margin-top: 100px;
         }
     </style>
 </head>
