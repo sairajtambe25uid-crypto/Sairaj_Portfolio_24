@@ -361,7 +361,7 @@
                         "Learning • Building • Leading • Growing"
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="#resume" class="btn-gradient px-8 py-3 rounded-full font-semibold cursor-hover shadow-lg">
+                        <a href="resume.pdf" target="_blank" class="btn-gradient px-8 py-3 rounded-full font-semibold cursor-hover shadow-lg">
                             <i class="fa-solid fa-file-alt mr-2"></i> View Resume
                         </a>
                         <a href="#contact" class="btn-outline px-8 py-3 rounded-full font-semibold cursor-hover bg-transparent">
@@ -375,8 +375,7 @@
                     <div class="relative w-72 h-72 md:w-96 md:h-96 animate-float">
                         <!-- Glass frame / Glow container -->
                         <div class="profile-img-container w-full h-full glass">
-                            <!-- NOTE: Replace the src below with your actual profile picture path, e.g., src="profile.jpg" -->
-                            <img src="https://placehold.co/600x600/081b29/00e5ff?text=Sairaj" alt="Sairaj Yogesh Tambe" class="profile-img">
+                            <img src="profile.jpg" alt="Sairaj Yogesh Tambe" class="profile-img">
                         </div>
                         
                         <!-- Floating badges -->
@@ -769,14 +768,14 @@
                             <a href="https://www.instagram.com/sairaj_tambe_7933" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-pink-500 hover:bg-pink-500 hover:text-white hover:shadow-[0_0_15px_#ec4899] transition-all duration-300 cursor-hover">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="#" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-blue-500 hover:bg-blue-500 hover:text-white hover:shadow-[0_0_15px_#3b82f6] transition-all duration-300 cursor-hover" title="Add LinkedIn Later">
+                            <a href="https://www.linkedin.com/in/sairaj-tambe-502999419" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-blue-500 hover:bg-blue-500 hover:text-white hover:shadow-[0_0_15px_#3b82f6] transition-all duration-300 cursor-hover" title="LinkedIn">
                                 <i class="fa-brands fa-linkedin-in"></i>
                             </a>
                         </div>
                         
                         <!-- Resume Download -->
                         <div class="pt-4" id="resume">
-                            <a href="#" download class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
+                            <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" target="_blank" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
                                 <i class="fa-solid fa-download"></i> Download Resume
                             </a>
                         </div>
