@@ -775,7 +775,7 @@
                         
                         <!-- Resume Download -->
                         <div class="pt-4" id="resume">
-                            <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" target="_blank" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
+                            <a href="resume.pdf"sairajtambe25uid-crypto/Sairaj_Portfolio_24/Sairaj_Tambe_Resume-2.pdf" target="_blank" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
                                 <i class="fa-solid fa-download"></i> Download Resume
                             </a>
                         </div>
