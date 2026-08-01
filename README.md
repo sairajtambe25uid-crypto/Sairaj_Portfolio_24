@@ -1,4 +1,4 @@
- 
+ <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <!-- Google Fonts: Poppins & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -361,8 +361,8 @@
                         "Learning • Building • Leading • Growing"
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="resume.pdf" target="_blank" class="btn-gradient px-8 py-3 rounded-full font-semibold cursor-hover shadow-lg">
-                            <i class="fa-solid fa-file-alt mr-2"></i> View Resume
+                        <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" class="btn-gradient px-8 py-3 rounded-full font-semibold cursor-hover shadow-lg">
+                            <i class="fa-solid fa-download mr-2"></i> Download Resume
                         </a>
                         <a href="#contact" class="btn-outline px-8 py-3 rounded-full font-semibold cursor-hover bg-transparent">
                             <i class="fa-solid fa-paper-plane mr-2"></i> Contact Me
@@ -775,7 +775,7 @@
                         
                         <!-- Resume Download -->
                         <div class="pt-4" id="resume">
-                            <a href="resume.pdf"sairajtambe25uid-crypto/Sairaj_Portfolio_24/Sairaj_Tambe_Resume-2.pdf" target="_blank" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
+                            <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
                                 <i class="fa-solid fa-download"></i> Download Resume
                             </a>
                         </div>
