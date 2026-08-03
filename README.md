@@ -1,4 +1,4 @@
- 
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
     
     <!-- Google Fonts: Poppins & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- FontAwesome -->
@@ -46,7 +46,26 @@
             color: #FFFFFF;
             overflow-x: hidden;
             font-family: 'Poppins', sans-serif;
-            cursor: none; /* Hide default cursor for custom cursor */
+        }
+        @media (hover: hover) and (pointer: fine) {
+            body { cursor: none; } /* Hide default cursor for custom cursor on desktop/mouse devices */
+        }
+
+        /* Reliable responsive sizing across phones, tablets, and desktops */
+        html {
+            -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+        }
+        img, svg, canvas, video {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            width: 100%;
+            max-width: 1280px;
+        }
+        @media (max-width: 480px) {
+            .profile-img-container { width: 15rem !important; height: 15rem !important; }
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Outfit', sans-serif;
@@ -281,11 +300,6 @@
             transition: width 1.5s ease-in-out;
             box-shadow: 0 0 10px #00E5FF;
         }
-
-        /* Prevent the fixed/blurred navbar from covering section tops when jumping via nav links */
-        section[id] {
-            scroll-margin-top: 100px;
-        }
     </style>
 </head>
 <body class="antialiased">
@@ -355,19 +369,19 @@
                 <!-- Text Content -->
                 <div data-aos="fade-right" data-aos-duration="1000">
                     <p class="text-secondary text-lg mb-2 font-medium">Hi, I'm</p>
-                    <h1 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                    <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
                         SAIRAJ YOGESH <br> 
                         <span class="text-gradient">TAMBE</span>
                     </h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold mb-4 h-10">
+                    <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 h-10">
                         I am a <span id="typed-text" class="text-accent"></span>
                     </h2>
                     <p class="text-gray-300 text-lg mb-8 italic border-l-4 border-secondary pl-4">
                         "Learning • Building • Leading • Growing"
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" class="btn-gradient px-8 py-3 rounded-full font-semibold cursor-hover shadow-lg">
-                            <i class="fa-solid fa-download mr-2"></i> Download Resume
+                        <a href="resume.pdf" target="_blank" class="btn-gradient px-8 py-3 rounded-full font-semibold cursor-hover shadow-lg">
+                            <i class="fa-solid fa-file-alt mr-2"></i> View Resume
                         </a>
                         <a href="#contact" class="btn-outline px-8 py-3 rounded-full font-semibold cursor-hover bg-transparent">
                             <i class="fa-solid fa-paper-plane mr-2"></i> Contact Me
@@ -384,10 +398,10 @@
                         </div>
                         
                         <!-- Floating badges -->
-                        <div class="absolute top-10 -left-6 glass px-4 py-2 rounded-xl border border-secondary/30 flex items-center gap-2 animate-bounce cursor-hover" style="animation-duration: 3s;">
+                        <div class="absolute top-10 left-0 sm:-left-6 glass px-3 py-2 sm:px-4 rounded-xl border border-secondary/30 flex items-center gap-2 animate-bounce cursor-hover text-sm" style="animation-duration: 3s;">
                             <i class="fa-solid fa-code text-secondary"></i> <span class="text-sm font-medium">Developer</span>
                         </div>
-                        <div class="absolute bottom-10 -right-6 glass px-4 py-2 rounded-xl border border-accent/30 flex items-center gap-2 animate-bounce cursor-hover" style="animation-duration: 4s; animation-delay: 1s;">
+                        <div class="absolute bottom-10 right-0 sm:-right-6 glass px-3 py-2 sm:px-4 rounded-xl border border-accent/30 flex items-center gap-2 animate-bounce cursor-hover text-sm" style="animation-duration: 4s; animation-delay: 1s;">
                             <i class="fa-solid fa-users text-accent"></i> <span class="text-sm font-medium">Leader</span>
                         </div>
                     </div>
@@ -767,10 +781,13 @@
 
                         <!-- Socials -->
                         <div class="pt-6 border-t border-white/10 flex gap-4">
-                            <a href="https://github.com/sairajtambe25uid-crypto" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-white hover:bg-white hover:text-primary hover:shadow-[0_0_15px_#FFFFFF] transition-all duration-300 cursor-hover">
+                            <a href="https://wa.me/919834823397" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-green-500 hover:bg-green-500 hover:text-white hover:shadow-[0_0_15px_#22c55e] transition-all duration-300 cursor-hover" title="WhatsApp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="https://github.com/sairajtambe25uid-crypto" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-white hover:bg-white hover:text-primary hover:shadow-[0_0_15px_#FFFFFF] transition-all duration-300 cursor-hover" title="GitHub">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://www.instagram.com/sairaj_tambe_7933" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-pink-500 hover:bg-pink-500 hover:text-white hover:shadow-[0_0_15px_#ec4899] transition-all duration-300 cursor-hover">
+                            <a href="https://www.instagram.com/sairaj_tambe_7933" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-pink-500 hover:bg-pink-500 hover:text-white hover:shadow-[0_0_15px_#ec4899] transition-all duration-300 cursor-hover" title="Instagram">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/sairaj-tambe-502999419" target="_blank" class="w-12 h-12 rounded-full glass flex justify-center items-center text-xl text-blue-500 hover:bg-blue-500 hover:text-white hover:shadow-[0_0_15px_#3b82f6] transition-all duration-300 cursor-hover" title="LinkedIn">
@@ -780,7 +797,7 @@
                         
                         <!-- Resume Download -->
                         <div class="pt-4" id="resume">
-                            <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
+                            <a href="resume.pdf" download="Sairaj_Tambe_Resume.pdf" target="_blank" class="inline-flex items-center gap-2 btn-outline px-6 py-3 rounded-full font-semibold cursor-hover">
                                 <i class="fa-solid fa-download"></i> Download Resume
                             </a>
                         </div>
@@ -962,6 +979,13 @@
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
                 initParticles();
+            });
+            window.addEventListener('orientationchange', () => {
+                setTimeout(() => {
+                    canvas.width = window.innerWidth;
+                    canvas.height = window.innerHeight;
+                    initParticles();
+                }, 200);
             });
 
             class Particle {
